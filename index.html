@@ -2,19 +2,27 @@
 <html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Marathon Florida Keys Fishing Guide</title>
 <style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{margin:0;background:#eef5f6;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:#17323b}
-.hero{background:linear-gradient(135deg,#063b52,#087a8b);color:white;padding:48px 6vw}
-.hero h1{font-size:42px;margin:0 0 8px} .hero p{max-width:850px;font-size:18px;line-height:1.5}
-.wrap{max-width:1100px;margin:30px auto;padding:0 18px}
+.hero{background:linear-gradient(135deg,#063b52,#087a8b);color:white;padding:48px 6vw 54px}
+.hero-inner{max-width:1240px;margin:auto}.hero h1{font-size:46px;line-height:1.08;margin:0 0 10px}.hero p{max-width:850px;font-size:18px;line-height:1.5}
+.quick-nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.quick-nav a{background:#ffffff18;border:1px solid #ffffff55;border-radius:999px;color:white;font-size:14px;font-weight:750;padding:10px 15px;text-decoration:none;transition:.18s ease}.quick-nav a:hover,.quick-nav a:focus-visible,.quick-nav a[aria-current="page"]{background:white;color:#07566c;transform:translateY(-1px)}
+.wrap{max-width:1240px;margin:30px auto;padding:0 18px}
 .note{background:#fff7dc;border-left:5px solid #e4a11b;padding:16px 18px;border-radius:8px;margin-bottom:24px;line-height:1.45}
-.card{background:white;border-radius:18px;overflow:hidden;margin:0 0 28px;box-shadow:0 8px 25px #1232;display:grid;grid-template-columns:minmax(280px,42%) 1fr}
-.card img{width:100%;height:100%;min-height:330px;object-fit:cover;background:#dce8ea}
-.content{padding:24px} h2{font-size:30px;margin:8px 0 18px;color:#064e65} h3{font-size:15px;text-transform:uppercase;letter-spacing:.05em;color:#16738a;margin:0 0 5px}
+.toolbar{align-items:center;background:#fffffff2;border:1px solid #d7e6e9;border-radius:16px;box-shadow:0 8px 25px #1231;display:flex;gap:24px;justify-content:space-between;margin:28px 0 24px;padding:18px 20px;position:sticky;top:12px;z-index:5;backdrop-filter:blur(10px)}
+.toolbar .eyebrow{color:#16738a;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.toolbar h2{color:#064e65;font-size:25px;margin:2px 0 3px}.result-count{color:#61777e;font-size:14px}.sort-control{align-items:center;display:flex;gap:10px;white-space:nowrap}.sort-control label{font-size:13px;font-weight:750}.sort-control select{appearance:none;background:#eef6f7 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath fill='%2307566c' d='m1 1 5 5 5-5'/%3E%3C/svg%3E") no-repeat right 13px center;border:1px solid #bfd7dc;border-radius:10px;color:#17323b;font:inherit;font-weight:650;padding:10px 38px 10px 12px}
+.fish-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.card[hidden]{display:none}
+.card{background:white;border-radius:18px;overflow:hidden;box-shadow:0 8px 25px #1232;display:flex;flex-direction:column;min-width:0}
+.card img{width:100%;height:270px;object-fit:cover;background:#dce8ea}
+.content{display:flex;flex:1;flex-direction:column;padding:22px;position:relative}.content h2{font-size:28px;margin:8px 48px 18px 0;color:#064e65}.rank{align-items:center;background:#064e65;border-radius:999px;color:white;display:flex;font-size:13px;font-weight:800;height:34px;justify-content:center;position:absolute;right:20px;top:20px;width:34px}
+h3{font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:#16738a;margin:0 0 5px}
 p{line-height:1.5;margin:0} .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px}
 .badge{display:inline-block;background:#e3f2f4;color:#07566c;border-radius:999px;padding:6px 10px;font-weight:700;font-size:12px}
-.regs{background:#f3f7f8;border-radius:10px;padding:14px}
+.regs{background:#f3f7f8;border-radius:10px;margin-top:auto;padding:14px}
 footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738a}
-@media(max-width:760px){.card{grid-template-columns:1fr}.card img{height:300px;min-height:0}.grid{grid-template-columns:1fr}.hero h1{font-size:32px}}
+@media(max-width:920px){.fish-list{grid-template-columns:1fr}.card{display:grid;grid-template-columns:minmax(260px,40%) 1fr}.card img{height:100%;min-height:340px}}
+@media(max-width:680px){.hero{padding:38px 20px 42px}.hero h1{font-size:34px}.quick-nav{display:grid;grid-template-columns:1fr 1fr}.quick-nav a{text-align:center}.wrap{margin-top:20px}.toolbar{align-items:stretch;flex-direction:column;gap:14px;position:static}.sort-control{align-items:stretch;flex-direction:column;gap:6px}.sort-control select{width:100%}.card{display:flex}.card img{height:245px;min-height:0}.grid{grid-template-columns:1fr}.content{padding:18px}.content h2{font-size:26px}.ratings{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:6px!important}.rating{padding:8px 6px!important}.stars{font-size:15px!important;letter-spacing:0!important}.rating small{font-size:11px}}
 @media print{body{background:white}.card{break-inside:avoid;box-shadow:none;border:1px solid #ccd}}
 
 .ratings{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0 0 18px}
@@ -22,19 +30,36 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
 .rating b{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:#3e6f7b;margin-bottom:4px}
 .stars{font-size:20px;letter-spacing:1px;color:#c58b12;white-space:nowrap}
 .rating small{display:block;color:#61777e;margin-top:3px}
-@media(max-width:760px){.ratings{grid-template-columns:1fr}}
-
 </style></head>
 <body>
-<header class="hero"><h1>Marathon, Florida Keys Fishing Guide</h1>
-<p><b>Real fish photographs</b> with quick-reference bait, Marathon-area habitat and harvest regulations. Built for recognizing your targets on the water.</p></header>
+<header class="hero"><div class="hero-inner"><h1>Marathon, Florida Keys Fishing Guide</h1>
+<p><b>Real fish photographs</b> with quick-reference bait, Marathon-area habitat and harvest regulations. Sort the guide or jump straight to the fish that match your trip.</p>
+<nav class="quick-nav" aria-label="Quick fish views">
+  <a href="#all" data-view="all">All Fish</a>
+  <a href="#eating" data-view="eating">Best Eating</a>
+  <a href="#catching" data-view="catching">Best to Catch</a>
+  <a href="#challenge" data-view="challenge">Hardest Challenge</a>
+</nav></div></header>
 <main class="wrap">
 
 <div class="note"><b>Rating scale:</b> ★★★★★ = exceptional. <b>Eating</b> rates table quality, <b>Fun / Fight</b> rates the experience on the rod, and <b>Difficulty</b> rates how challenging the species is to locate, hook and successfully land. Difficulty can vary a lot with season, guide quality and conditions.</div>
 
 <div class="note"><b>Regulation warning:</b> The Florida Keys cross state/federal and Atlantic/Gulf management boundaries, and seasons/quotas can change. These are planning summaries, not a substitute for the current FWC and NOAA rules on the day you fish.</div>
 
-    <article class="card">
+<section class="toolbar" aria-label="Fish list controls">
+  <div><p class="eyebrow">Explore the list</p><h2 id="view-title">All fish</h2><p class="result-count" id="result-count" aria-live="polite">Showing all 15 species</p></div>
+  <div class="sort-control"><label for="sort-fish">Sort by</label><select id="sort-fish">
+    <option value="featured">Featured order</option>
+    <option value="eating">Eating rating</option>
+    <option value="fight">Fun / fight rating</option>
+    <option value="difficulty">Difficulty rating</option>
+    <option value="overall">Overall score</option>
+    <option value="name">Name A–Z</option>
+  </select></div>
+</section>
+
+<div class="fish-list" id="fish-list">
+    <article class="card" data-name="Tarpon" data-order="1" data-eating="1" data-fight="5" data-difficulty="4">
       <img src="assets/images/tarpon.jpg" alt="Tarpon" loading="lazy">
       <div class="content">
         <div class="badge">Most Fun</div>
@@ -51,7 +76,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>Catch-and-release only. Hook-and-line only. Fish over 40 in. generally must remain in the water except limited record-tag circumstances. No snagging.</p></section>
       </div>
     </article>
-    <article class="card">
+    <article class="card" data-name="Sailfish" data-order="2" data-eating="2" data-fight="5" data-difficulty="5">
       <img src="assets/images/sailfish.jpg" alt="Sailfish" loading="lazy">
       <div class="content">
         <div class="badge">Most Fun</div>
@@ -68,7 +93,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>63 in. minimum lower-jaw fork length if retained; 1 billfish/person. Federal HMS rules/permit requirements can apply offshore; check NOAA before the trip.</p></section>
       </div>
     </article>
-    <article class="card">
+    <article class="card" data-name="Permit" data-order="3" data-eating="3" data-fight="5" data-difficulty="5">
       <img src="assets/images/permit.jpg" alt="Permit" loading="lazy">
       <div class="content">
         <div class="badge">Most Fun</div>
@@ -85,7 +110,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>Marathon is in the Special Permit Zone: 22 in. minimum fork length; 1/person; max 2/vessel; closed Apr 1–Jul 31. Check current FWC SPZ rules.</p></section>
       </div>
     </article>
-    <article class="card">
+    <article class="card" data-name="Mahi-mahi" data-order="4" data-eating="5" data-fight="5" data-difficulty="3">
       <img src="assets/images/mahi-mahi.jpg" alt="Mahi-mahi" loading="lazy">
       <div class="content">
         <div class="badge">Fun + Great Eating</div>
@@ -102,7 +127,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>Atlantic: 20 in. minimum fork length; 5/person; 30/private vessel, whichever is less. For-hire rules differ; verify current FWC rules.</p></section>
       </div>
     </article>
-    <article class="card">
+    <article class="card" data-name="Greater Amberjack" data-order="5" data-eating="4" data-fight="5" data-difficulty="3">
       <img src="assets/images/greater-amberjack.jpg" alt="Greater Amberjack" loading="lazy">
       <div class="content">
         <div class="badge">Most Fun</div>
@@ -119,7 +144,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>Atlantic and Gulf rules differ. Atlantic minimum is generally 28 in. fork length, 1/person, with seasonal closure; Gulf rules have a larger minimum and quota-based season. Verify the side of the Keys you fish.</p></section>
       </div>
     </article>
-    <article class="card">
+    <article class="card" data-name="Blackfin Tuna" data-order="6" data-eating="5" data-fight="5" data-difficulty="4">
       <img src="assets/images/blackfin-tuna.jpg" alt="Blackfin Tuna" loading="lazy">
       <div class="content">
         <div class="badge">Fun + Great Eating</div>
@@ -136,7 +161,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>Florida treats blackfin as an unregulated species; default unregulated-species limits apply. Verify FWC rules before harvest.</p></section>
       </div>
     </article>
-    <article class="card">
+    <article class="card" data-name="Cobia" data-order="7" data-eating="5" data-fight="4" data-difficulty="3">
       <img src="assets/images/cobia.jpg" alt="Cobia" loading="lazy">
       <div class="content">
         <div class="badge">Fun + Great Eating</div>
@@ -153,7 +178,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>36 in. minimum fork length; 1/person or 2/vessel, whichever is less under Florida rules. Verify federal-water rules if offshore.</p></section>
       </div>
     </article>
-    <article class="card">
+    <article class="card" data-name="Great Barracuda" data-order="8" data-eating="2" data-fight="5" data-difficulty="2">
       <img src="assets/images/great-barracuda.jpg" alt="Great Barracuda" loading="lazy">
       <div class="content">
         <div class="badge">Most Fun</div>
@@ -170,7 +195,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>Monroe County has a 15–36 in. fork-length slot, with limited allowance for a fish over 36 in.; county bag/vessel limits apply. Check current FWC Monroe County rules.</p></section>
       </div>
     </article>
-    <article class="card">
+    <article class="card" data-name="Black Grouper" data-order="9" data-eating="5" data-fight="4" data-difficulty="4">
       <img src="assets/images/black-grouper.jpg" alt="Black Grouper" loading="lazy">
       <div class="content">
         <div class="badge">Best to Eat</div>
@@ -187,7 +212,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>Monroe County follows special/Atlantic shallow-water grouper rules. 24 in. minimum total length; aggregate and vessel limits apply; seasonal closure applies. Verify current FWC/NOAA season before keeping one.</p></section>
       </div>
     </article>
-    <article class="card">
+    <article class="card" data-name="Mutton Snapper" data-order="10" data-eating="5" data-fight="4" data-difficulty="4">
       <img src="assets/images/mutton-snapper.jpg" alt="Mutton Snapper" loading="lazy">
       <div class="content">
         <div class="badge">Best to Eat</div>
@@ -204,7 +229,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>18 in. minimum total length; 5/person within the snapper aggregate under Florida rules. Reef-fish gear rules apply.</p></section>
       </div>
     </article>
-    <article class="card">
+    <article class="card" data-name="Yellowtail Snapper" data-order="11" data-eating="5" data-fight="3" data-difficulty="3">
       <img src="assets/images/yellowtail-snapper.jpg" alt="Yellowtail Snapper" loading="lazy">
       <div class="content">
         <div class="badge">Best to Eat</div>
@@ -221,7 +246,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>12 in. minimum total length; within the 10-snapper/person aggregate. Reef-fish gear rules apply.</p></section>
       </div>
     </article>
-    <article class="card">
+    <article class="card" data-name="Hogfish" data-order="12" data-eating="5" data-fight="3" data-difficulty="4">
       <img src="assets/images/hogfish.jpg" alt="Hogfish" loading="lazy">
       <div class="content">
         <div class="badge">Best to Eat</div>
@@ -238,7 +263,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>Florida Keys: 16 in. minimum fork length; 1/person; open May 1–Oct 31. Reef-fish gear rules apply.</p></section>
       </div>
     </article>
-    <article class="card">
+    <article class="card" data-name="Mangrove Snapper" data-order="13" data-eating="5" data-fight="3" data-difficulty="3">
       <img src="assets/images/mangrove-snapper.jpg" alt="Mangrove Snapper" loading="lazy">
       <div class="content">
         <div class="badge">Best to Eat</div>
@@ -255,7 +280,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>State minimum generally 10 in. total length; federal South Atlantic minimum differs. State bag is limited within the snapper aggregate. Confirm whether you are in state or federal waters.</p></section>
       </div>
     </article>
-    <article class="card">
+    <article class="card" data-name="Wahoo" data-order="14" data-eating="5" data-fight="5" data-difficulty="4">
       <img src="assets/images/wahoo.jpg" alt="Wahoo" loading="lazy">
       <div class="content">
         <div class="badge">Best to Eat + Fast</div>
@@ -272,7 +297,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>Florida: no minimum size; 2/person; open year-round. Check applicable federal rules offshore.</p></section>
       </div>
     </article>
-    <article class="card">
+    <article class="card" data-name="Tripletail" data-order="15" data-eating="5" data-fight="4" data-difficulty="3">
       <img src="assets/images/tripletail.jpg" alt="Tripletail" loading="lazy">
       <div class="content">
         <div class="badge">Best to Eat</div>
@@ -289,6 +314,64 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>18 in. minimum total length; 2/person; hook-and-line only; open year-round under Florida rules.</p></section>
       </div>
     </article>
+</div>
 </main>
 <footer>Prepared August 30, 2026 • Photographs are hosted with this guide and remain the property of their respective creators/licensors. <a href="image-sources.html">Image sources and credits</a>.</footer>
+<script>
+const list = document.querySelector('#fish-list');
+const cards = Array.from(list.querySelectorAll('.card'));
+const sortSelect = document.querySelector('#sort-fish');
+const viewTitle = document.querySelector('#view-title');
+const resultCount = document.querySelector('#result-count');
+const viewLinks = Array.from(document.querySelectorAll('[data-view]'));
+
+cards.forEach(card => {
+  const rank = document.createElement('span');
+  rank.className = 'rank';
+  rank.setAttribute('aria-hidden', 'true');
+  card.querySelector('.content').prepend(rank);
+});
+
+const views = {
+  all: {title: 'All fish', sort: 'featured', test: () => true},
+  eating: {title: 'Best eating', sort: 'eating', test: card => +card.dataset.eating === 5},
+  catching: {title: 'Best to catch', sort: 'fight', test: card => +card.dataset.fight === 5},
+  challenge: {title: 'Hardest challenge', sort: 'difficulty', test: card => +card.dataset.difficulty >= 4}
+};
+
+let activeView = 'all';
+const value = (card, key) => +card.dataset[key];
+const tieBreak = (a, b) => value(b, 'fight') - value(a, 'fight') || value(b, 'eating') - value(a, 'eating') || value(b, 'difficulty') - value(a, 'difficulty') || a.dataset.name.localeCompare(b.dataset.name);
+const sorters = {
+  featured: (a, b) => value(a, 'order') - value(b, 'order'),
+  eating: (a, b) => value(b, 'eating') - value(a, 'eating') || value(b, 'fight') - value(a, 'fight') || value(b, 'difficulty') - value(a, 'difficulty') || a.dataset.name.localeCompare(b.dataset.name),
+  fight: (a, b) => value(b, 'fight') - value(a, 'fight') || value(b, 'difficulty') - value(a, 'difficulty') || value(b, 'eating') - value(a, 'eating') || a.dataset.name.localeCompare(b.dataset.name),
+  difficulty: (a, b) => value(b, 'difficulty') - value(a, 'difficulty') || tieBreak(a, b),
+  overall: (a, b) => (value(b, 'eating') + value(b, 'fight') + value(b, 'difficulty')) - (value(a, 'eating') + value(a, 'fight') + value(a, 'difficulty')) || tieBreak(a, b),
+  name: (a, b) => a.dataset.name.localeCompare(b.dataset.name)
+};
+
+function render() {
+  const view = views[activeView];
+  const sorted = [...cards].sort(sorters[sortSelect.value]);
+  list.replaceChildren(...sorted);
+  const visible = sorted.filter(view.test);
+  sorted.forEach(card => card.hidden = !view.test(card));
+  visible.forEach((card, index) => card.querySelector('.rank').textContent = index + 1);
+  viewTitle.textContent = view.title;
+  resultCount.textContent = `Showing ${visible.length} of ${cards.length} species`;
+  viewLinks.forEach(link => link.setAttribute('aria-current', link.dataset.view === activeView ? 'page' : 'false'));
+}
+
+function selectViewFromHash() {
+  const requested = location.hash.slice(1);
+  activeView = views[requested] ? requested : 'all';
+  sortSelect.value = views[activeView].sort;
+  render();
+}
+
+sortSelect.addEventListener('change', render);
+window.addEventListener('hashchange', selectViewFromHash);
+selectViewFromHash();
+</script>
 </body></html>
