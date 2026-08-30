@@ -21,10 +21,10 @@ p{line-height:1.5;margin:0} .grid{display:grid;grid-template-columns:1fr 1fr;gap
 .regs{background:#f3f7f8;border-radius:10px;margin-top:auto;padding:14px}.season-line{align-items:flex-start;border-bottom:1px solid #dbe7e9;display:flex;gap:8px;margin:0 0 10px;padding:0 0 10px}.season-state{border-radius:999px;flex:0 0 auto;font-size:11px;font-weight:800;padding:4px 8px;text-transform:uppercase}.season-state.open{background:#dff3e5;color:#216638}.season-state.closed{background:#fde3e3;color:#9a3030}.season-state.mixed{background:#fff0c9;color:#805b00}.season-state.release{background:#dfeef8;color:#195a7a}.season-detail{color:#435f68;font-size:13px;line-height:1.4}
 footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738a}
 @media(max-width:920px){.fish-list{grid-template-columns:1fr}.card{display:grid;grid-template-columns:minmax(260px,40%) 1fr}.card img{height:100%;min-height:340px}}
-@media(max-width:680px){.hero{padding:38px 20px 42px}.hero h1{font-size:34px}.quick-nav{display:grid;grid-template-columns:1fr 1fr}.quick-nav a{text-align:center}.wrap{margin-top:20px}.toolbar{align-items:stretch;flex-direction:column;gap:14px;position:static}.controls{display:grid;grid-template-columns:1fr}.sort-control{align-items:stretch;flex-direction:column;gap:6px}.sort-control select{width:100%}.card{display:flex}.card img{height:245px;min-height:0}.grid{grid-template-columns:1fr}.content{padding:18px}.content h2{font-size:26px}.ratings{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:6px!important}.rating{padding:8px 6px!important}.stars{font-size:15px!important;letter-spacing:0!important}.rating small{font-size:11px}}
+@media(max-width:680px){.hero{padding:38px 20px 42px}.hero h1{font-size:34px}.quick-nav{display:grid;grid-template-columns:1fr 1fr}.quick-nav a{text-align:center}.wrap{margin-top:20px}.toolbar{align-items:stretch;flex-direction:column;gap:14px;position:static}.controls{display:grid;grid-template-columns:1fr}.sort-control{align-items:stretch;flex-direction:column;gap:6px}.sort-control select{width:100%}.card{display:flex}.card img{height:245px;min-height:0}.grid{grid-template-columns:1fr}.content{padding:18px}.content h2{font-size:26px}.ratings{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:6px!important}.rating{padding:8px 7px!important}.stars{font-size:16px!important;letter-spacing:0!important}.rating small{font-size:11px}}
 @media print{body{background:white}.card{break-inside:avoid;box-shadow:none;border:1px solid #ccd}}
 
-.ratings{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0 0 18px}
+.ratings{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:0 0 18px}
 .rating{background:#eef6f7;border:1px solid #d3e6e9;border-radius:10px;padding:10px 12px}
 .rating b{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:#3e6f7b;margin-bottom:4px}
 .stars{font-size:20px;letter-spacing:1px;color:#c58b12;white-space:nowrap}
@@ -52,6 +52,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
     <div class="sort-control"><label for="sort-fish">Sort by</label><select id="sort-fish">
       <option value="featured">Featured order</option>
       <option value="eating">Eating rating</option>
+      <option value="mildness">Least fishy taste</option>
       <option value="fight">Fun / fight rating</option>
       <option value="difficulty">Difficulty rating</option>
       <option value="overall">Overall score</option>
@@ -61,7 +62,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
 </section>
 
 <div class="fish-list" id="fish-list">
-    <article class="card" data-name="Tarpon" data-order="1" data-eating="1" data-fight="5" data-difficulty="4">
+    <article class="card" data-name="Tarpon" data-order="1" data-eating="1" data-mildness="1" data-fight="5" data-difficulty="4">
       <img src="assets/images/tarpon.jpg" alt="Tarpon" loading="lazy">
       <div class="content">
         <div class="badge">Most Fun</div>
@@ -78,7 +79,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>Catch-and-release only. Hook-and-line only. Fish over 40 in. generally must remain in the water except limited record-tag circumstances. No snagging.</p></section>
       </div>
     </article>
-    <article class="card" data-name="Sailfish" data-order="2" data-eating="2" data-fight="5" data-difficulty="5">
+    <article class="card" data-name="Sailfish" data-order="2" data-eating="2" data-mildness="2" data-fight="5" data-difficulty="5">
       <img src="assets/images/sailfish.jpg" alt="Sailfish" loading="lazy">
       <div class="content">
         <div class="badge">Most Fun</div>
@@ -95,7 +96,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>63 in. minimum lower-jaw fork length if retained; 1 billfish/person. Federal HMS rules/permit requirements can apply offshore; check NOAA before the trip.</p></section>
       </div>
     </article>
-    <article class="card" data-name="Permit" data-order="3" data-eating="3" data-fight="5" data-difficulty="5">
+    <article class="card" data-name="Permit" data-order="3" data-eating="3" data-mildness="3" data-fight="5" data-difficulty="5">
       <img src="assets/images/permit.jpg" alt="Permit" loading="lazy">
       <div class="content">
         <div class="badge">Most Fun</div>
@@ -112,7 +113,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>Marathon is in the Special Permit Zone: 22 in. minimum fork length; 1/person; maximum 2/vessel. Hook and line only in state waters.</p></section>
       </div>
     </article>
-    <article class="card" data-name="Mahi-mahi" data-order="4" data-eating="5" data-fight="5" data-difficulty="3">
+    <article class="card" data-name="Mahi-mahi" data-order="4" data-eating="5" data-mildness="4" data-fight="5" data-difficulty="3">
       <img src="assets/images/mahi-mahi.jpg" alt="Mahi-mahi" loading="lazy">
       <div class="content">
         <div class="badge">Fun + Great Eating</div>
@@ -129,7 +130,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>Atlantic: 20 in. minimum fork length; 5/person; 30/private vessel, whichever is less. For-hire rules differ; verify current FWC rules.</p></section>
       </div>
     </article>
-    <article class="card" data-name="Greater Amberjack" data-order="5" data-eating="4" data-fight="5" data-difficulty="3">
+    <article class="card" data-name="Greater Amberjack" data-order="5" data-eating="4" data-mildness="3" data-fight="5" data-difficulty="3">
       <img src="assets/images/greater-amberjack.jpg" alt="Greater Amberjack" loading="lazy">
       <div class="content">
         <div class="badge">Most Fun</div>
@@ -146,7 +147,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>Marathon and all Monroe County state waters follow Atlantic rules: 28 in. minimum fork length; 1/person. Gulf federal waters use a 34 in. minimum and separate 2026 dates.</p></section>
       </div>
     </article>
-    <article class="card" data-name="Blackfin Tuna" data-order="6" data-eating="5" data-fight="5" data-difficulty="4">
+    <article class="card" data-name="Blackfin Tuna" data-order="6" data-eating="5" data-mildness="3" data-fight="5" data-difficulty="4">
       <img src="assets/images/blackfin-tuna.jpg" alt="Blackfin Tuna" loading="lazy">
       <div class="content">
         <div class="badge">Fun + Great Eating</div>
@@ -163,7 +164,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>Florida treats blackfin as an unregulated species; default unregulated-species limits apply. Verify FWC rules before harvest.</p></section>
       </div>
     </article>
-    <article class="card" data-name="Cobia" data-order="7" data-eating="5" data-fight="4" data-difficulty="3">
+    <article class="card" data-name="Cobia" data-order="7" data-eating="5" data-mildness="4" data-fight="4" data-difficulty="3">
       <img src="assets/images/cobia.jpg" alt="Cobia" loading="lazy">
       <div class="content">
         <div class="badge">Fun + Great Eating</div>
@@ -180,7 +181,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>36 in. minimum fork length; 1/person or 2/vessel, whichever is less under Florida rules. Verify federal-water rules if offshore.</p></section>
       </div>
     </article>
-    <article class="card" data-name="Great Barracuda" data-order="8" data-eating="2" data-fight="5" data-difficulty="2">
+    <article class="card" data-name="Great Barracuda" data-order="8" data-eating="2" data-mildness="3" data-fight="5" data-difficulty="2">
       <img src="assets/images/great-barracuda.jpg" alt="Great Barracuda" loading="lazy">
       <div class="content">
         <div class="badge">Most Fun</div>
@@ -197,7 +198,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>Monroe County has a 15–36 in. fork-length slot, with limited allowance for a fish over 36 in.; county bag/vessel limits apply. Check current FWC Monroe County rules.</p></section>
       </div>
     </article>
-    <article class="card" data-name="Black Grouper" data-order="9" data-eating="5" data-fight="4" data-difficulty="4">
+    <article class="card" data-name="Black Grouper" data-order="9" data-eating="5" data-mildness="5" data-fight="4" data-difficulty="4">
       <img src="assets/images/black-grouper.jpg" alt="Black Grouper" loading="lazy">
       <div class="content">
         <div class="badge">Best to Eat</div>
@@ -214,7 +215,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>Monroe County follows Atlantic grouper rules: 24 in. minimum total length; 1 gag or black grouper within the 3-grouper aggregate; federal vessel limit is 2 black grouper.</p></section>
       </div>
     </article>
-    <article class="card" data-name="Mutton Snapper" data-order="10" data-eating="5" data-fight="4" data-difficulty="4">
+    <article class="card" data-name="Mutton Snapper" data-order="10" data-eating="5" data-mildness="4" data-fight="4" data-difficulty="4">
       <img src="assets/images/mutton-snapper.jpg" alt="Mutton Snapper" loading="lazy">
       <div class="content">
         <div class="badge">Best to Eat</div>
@@ -231,7 +232,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>18 in. minimum total length; 5/person within the snapper aggregate under Florida rules. Reef-fish gear rules apply.</p></section>
       </div>
     </article>
-    <article class="card" data-name="Yellowtail Snapper" data-order="11" data-eating="5" data-fight="3" data-difficulty="3">
+    <article class="card" data-name="Yellowtail Snapper" data-order="11" data-eating="5" data-mildness="5" data-fight="3" data-difficulty="3">
       <img src="assets/images/yellowtail-snapper.jpg" alt="Yellowtail Snapper" loading="lazy">
       <div class="content">
         <div class="badge">Best to Eat</div>
@@ -248,7 +249,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>12 in. minimum total length; within the 10-snapper/person aggregate. Reef-fish gear rules apply.</p></section>
       </div>
     </article>
-    <article class="card" data-name="Hogfish" data-order="12" data-eating="5" data-fight="3" data-difficulty="4">
+    <article class="card" data-name="Hogfish" data-order="12" data-eating="5" data-mildness="5" data-fight="3" data-difficulty="4">
       <img src="assets/images/hogfish.jpg" alt="Hogfish" loading="lazy">
       <div class="content">
         <div class="badge">Best to Eat</div>
@@ -265,7 +266,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>Florida Keys: 16 in. minimum fork length; 1/person. Reef-fish gear rules apply.</p></section>
       </div>
     </article>
-    <article class="card" data-name="Mangrove Snapper" data-order="13" data-eating="5" data-fight="3" data-difficulty="3">
+    <article class="card" data-name="Mangrove Snapper" data-order="13" data-eating="5" data-mildness="4" data-fight="3" data-difficulty="3">
       <img src="assets/images/mangrove-snapper.jpg" alt="Mangrove Snapper" loading="lazy">
       <div class="content">
         <div class="badge">Best to Eat</div>
@@ -282,7 +283,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>State minimum generally 10 in. total length; federal South Atlantic minimum differs. State bag is limited within the snapper aggregate. Confirm whether you are in state or federal waters.</p></section>
       </div>
     </article>
-    <article class="card" data-name="Wahoo" data-order="14" data-eating="5" data-fight="5" data-difficulty="4">
+    <article class="card" data-name="Wahoo" data-order="14" data-eating="5" data-mildness="4" data-fight="5" data-difficulty="4">
       <img src="assets/images/wahoo.jpg" alt="Wahoo" loading="lazy">
       <div class="content">
         <div class="badge">Best to Eat + Fast</div>
@@ -299,7 +300,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>Florida: no minimum size; 2/person. Check applicable federal rules offshore.</p></section>
       </div>
     </article>
-    <article class="card" data-name="Tripletail" data-order="15" data-eating="5" data-fight="4" data-difficulty="3">
+    <article class="card" data-name="Tripletail" data-order="15" data-eating="5" data-mildness="5" data-fight="4" data-difficulty="3">
       <img src="assets/images/tripletail.jpg" alt="Tripletail" loading="lazy">
       <div class="content">
         <div class="badge">Best to Eat</div>
@@ -333,11 +334,16 @@ cards.forEach(card => {
   rank.className = 'rank';
   rank.setAttribute('aria-hidden', 'true');
   card.querySelector('.content').prepend(rank);
+  const mildness = +card.dataset.mildness;
+  const tasteRating = document.createElement('div');
+  tasteRating.className = 'rating taste-rating';
+  tasteRating.innerHTML = `<b>Mild Taste</b><div class="stars">${'★'.repeat(mildness)}${'☆'.repeat(5 - mildness)}</div><small>${mildness}/5 · least fishy</small>`;
+  card.querySelector('.ratings').append(tasteRating);
 });
 
 const views = {
   all: {title: 'All fish', sort: 'featured', test: () => true},
-  eating: {title: 'Best eating', sort: 'eating', test: card => +card.dataset.eating === 5},
+  eating: {title: 'Best eating · mildest first', sort: 'mildness', test: card => +card.dataset.eating === 5},
   catching: {title: 'Best to catch', sort: 'fight', test: card => +card.dataset.fight === 5},
   challenge: {title: 'Hardest challenge', sort: 'difficulty', test: card => +card.dataset.difficulty >= 4}
 };
@@ -388,6 +394,7 @@ const tieBreak = (a, b) => value(b, 'fight') - value(a, 'fight') || value(b, 'ea
 const sorters = {
   featured: (a, b) => value(a, 'order') - value(b, 'order'),
   eating: (a, b) => value(b, 'eating') - value(a, 'eating') || value(b, 'fight') - value(a, 'fight') || value(b, 'difficulty') - value(a, 'difficulty') || a.dataset.name.localeCompare(b.dataset.name),
+  mildness: (a, b) => value(b, 'mildness') - value(a, 'mildness') || value(b, 'eating') - value(a, 'eating') || a.dataset.name.localeCompare(b.dataset.name),
   fight: (a, b) => value(b, 'fight') - value(a, 'fight') || value(b, 'difficulty') - value(a, 'difficulty') || value(b, 'eating') - value(a, 'eating') || a.dataset.name.localeCompare(b.dataset.name),
   difficulty: (a, b) => value(b, 'difficulty') - value(a, 'difficulty') || tieBreak(a, b),
   overall: (a, b) => (value(b, 'eating') + value(b, 'fight') + value(b, 'difficulty')) - (value(a, 'eating') + value(a, 'fight') + value(a, 'difficulty')) || tieBreak(a, b),
