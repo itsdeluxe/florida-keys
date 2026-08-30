@@ -48,7 +48,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
 </nav></div></header>
 <main class="wrap">
 <section class="toolbar" aria-label="Fish list controls">
-  <div><p class="eyebrow">Explore the list</p><h2 id="view-title">All fish</h2><p class="result-count" id="result-count" aria-live="polite">Showing all 15 species</p></div>
+  <div><p class="eyebrow">Explore the list</p><h2 id="view-title">All fish</h2><p class="result-count" id="result-count" aria-live="polite">Showing all 16 species</p></div>
   <div class="controls">
     <div class="sort-control"><label for="season-select">Regulation season</label><select id="season-select">
       <option value="winter">Winter · Dec–Feb</option>
@@ -339,6 +339,24 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
         <section class="regs"><h3>⚖️ Regulations</h3><p>18 in. minimum total length; 2/person; hook-and-line only under Florida rules.</p></section>
       </div>
     </article>
+    <article class="card" data-name="Florida Pompano" data-order="16" data-eating="5" data-mildness="5" data-fight="3" data-difficulty="2">
+      <img src="assets/images/florida-pompano.jpg" alt="Florida pompano" loading="lazy">
+      <div class="content">
+        <div class="badge">Mild + Excellent Eating</div>
+        <h2>Florida Pompano</h2>
+        <div class="ratings">
+          <div class="rating"><b>Eating</b><div class="stars">★★★★★</div><small>5/5</small></div>
+          <div class="rating"><b>Fun / Fight</b><div class="stars">★★★☆☆</div><small>3/5</small></div>
+          <div class="rating"><b>Difficulty</b><div class="stars">★★☆☆☆</div><small>2/5</small></div>
+        </div>
+        <div class="grid">
+          <section><h3>🎣 Bait &amp; lures</h3><p>Sand fleas, live shrimp, small crabs and clam pieces; small bucktails, banana jigs and shrimp-tipped jigs.</p></section>
+          <section><h3>📍 Where to catch</h3><p>Sandy beach edges, channels, seagrass-to-sand transitions and hard-sand flats. Around Monroe County, the best window is usually winter through early spring.</p></section>
+        </div>
+        <details class="setup"><summary>Recommended tackle</summary><div class="setup-grid"><div><b>Rod &amp; reel</b>7–7½ ft medium-light/medium spinning; 3000–4000 reel</div><div><b>Main line</b>10–15 lb braid</div><div><b>Leader</b>15–20 lb fluorocarbon</div><div><b>Hook</b>#1–1/0 inline circle; add only enough weight to hold bottom</div></div></details>
+        <section class="regs"><h3>⚖️ Regulations</h3><p>11 in. minimum fork length; 6/person; open year-round. Hook and line, cast net, and beach or haul seine only. Harvest with a multiple hook used with natural bait and snatching are prohibited.</p></section>
+      </div>
+    </article>
 </div>
 </main>
 <dialog class="detail-dialog" id="fish-detail-dialog">
@@ -441,6 +459,12 @@ const seasonRules = {
     spring: {state: 'mixed', label: 'Mixed dates', text: 'Open in March; closed April 1–May 31.'},
     summer: {state: 'mixed', label: 'Mixed dates', text: 'Closed June 1–July 31; open August 1–31.'},
     fall: {state: 'open', label: 'Open', text: 'Open September–November in the Special Permit Zone.'}
+  },
+  'Florida Pompano': {
+    winter: {state: 'open', label: 'Open', text: 'Open year-round; winter is a prime Florida Keys window.'},
+    spring: {state: 'open', label: 'Open', text: 'Open year-round; early spring is often productive in the Keys.'},
+    summer: {state: 'open', label: 'Open', text: 'Open year-round; locally less consistent than winter and early spring.'},
+    fall: {state: 'open', label: 'Open', text: 'Open year-round; look for improving action as water cools.'}
   },
   'Greater Amberjack': {
     winter: {state: 'open', label: 'Open', text: 'Marathon/Monroe (Atlantic rules) is open. Gulf 2026 season is closed.'},
