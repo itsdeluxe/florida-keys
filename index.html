@@ -9,9 +9,8 @@ body{margin:0;background:#eef5f6;font-family:-apple-system,BlinkMacSystemFont,"S
 .hero-inner{max-width:1240px;margin:auto}.hero h1{font-size:46px;line-height:1.08;margin:0 0 10px}.hero p{max-width:850px;font-size:18px;line-height:1.5}
 .quick-nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.quick-nav a{background:#ffffff18;border:1px solid #ffffff55;border-radius:999px;color:white;font-size:14px;font-weight:750;padding:10px 15px;text-decoration:none;transition:.18s ease}.quick-nav a:hover,.quick-nav a:focus-visible,.quick-nav a[aria-current="page"]{background:white;color:#07566c;transform:translateY(-1px)}
 .wrap{max-width:1240px;margin:30px auto;padding:0 18px}
-.note{background:#fff7dc;border-left:5px solid #e4a11b;padding:16px 18px;border-radius:8px;margin-bottom:24px;line-height:1.45}
-.toolbar{align-items:center;background:#fffffff2;border:1px solid #d7e6e9;border-radius:16px;box-shadow:0 8px 25px #1231;display:flex;gap:24px;justify-content:space-between;margin:28px 0 24px;padding:18px 20px;position:sticky;top:12px;z-index:5;backdrop-filter:blur(10px)}
-.toolbar .eyebrow{color:#16738a;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.toolbar h2{color:#064e65;font-size:25px;margin:2px 0 3px}.result-count{color:#61777e;font-size:14px}.sort-control{align-items:center;display:flex;gap:10px;white-space:nowrap}.sort-control label{font-size:13px;font-weight:750}.sort-control select{appearance:none;background:#eef6f7 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath fill='%2307566c' d='m1 1 5 5 5-5'/%3E%3C/svg%3E") no-repeat right 13px center;border:1px solid #bfd7dc;border-radius:10px;color:#17323b;font:inherit;font-weight:650;padding:10px 38px 10px 12px}
+.toolbar{align-items:center;background:#fffffff2;border:1px solid #d7e6e9;border-radius:16px;box-shadow:0 8px 25px #1231;display:flex;gap:24px;justify-content:space-between;margin:0 0 24px;padding:18px 20px;position:sticky;top:12px;z-index:5;backdrop-filter:blur(10px)}
+.toolbar .eyebrow{color:#16738a;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.toolbar h2{color:#064e65;font-size:25px;margin:2px 0 3px}.result-count{color:#61777e;font-size:14px}.controls{display:flex;gap:16px}.sort-control{align-items:center;display:flex;gap:10px;white-space:nowrap}.sort-control label{font-size:13px;font-weight:750}.sort-control select{appearance:none;background:#eef6f7 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath fill='%2307566c' d='m1 1 5 5 5-5'/%3E%3C/svg%3E") no-repeat right 13px center;border:1px solid #bfd7dc;border-radius:10px;color:#17323b;font:inherit;font-weight:650;padding:10px 38px 10px 12px}
 .fish-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.card[hidden]{display:none}
 .card{background:white;border-radius:18px;overflow:hidden;box-shadow:0 8px 25px #1232;display:flex;flex-direction:column;min-width:0}
 .card img{width:100%;height:270px;object-fit:cover;background:#dce8ea}
@@ -19,10 +18,10 @@ body{margin:0;background:#eef5f6;font-family:-apple-system,BlinkMacSystemFont,"S
 h3{font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:#16738a;margin:0 0 5px}
 p{line-height:1.5;margin:0} .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px}
 .badge{display:inline-block;background:#e3f2f4;color:#07566c;border-radius:999px;padding:6px 10px;font-weight:700;font-size:12px}
-.regs{background:#f3f7f8;border-radius:10px;margin-top:auto;padding:14px}
+.regs{background:#f3f7f8;border-radius:10px;margin-top:auto;padding:14px}.season-line{align-items:flex-start;border-bottom:1px solid #dbe7e9;display:flex;gap:8px;margin:0 0 10px;padding:0 0 10px}.season-state{border-radius:999px;flex:0 0 auto;font-size:11px;font-weight:800;padding:4px 8px;text-transform:uppercase}.season-state.open{background:#dff3e5;color:#216638}.season-state.closed{background:#fde3e3;color:#9a3030}.season-state.mixed{background:#fff0c9;color:#805b00}.season-state.release{background:#dfeef8;color:#195a7a}.season-detail{color:#435f68;font-size:13px;line-height:1.4}
 footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738a}
 @media(max-width:920px){.fish-list{grid-template-columns:1fr}.card{display:grid;grid-template-columns:minmax(260px,40%) 1fr}.card img{height:100%;min-height:340px}}
-@media(max-width:680px){.hero{padding:38px 20px 42px}.hero h1{font-size:34px}.quick-nav{display:grid;grid-template-columns:1fr 1fr}.quick-nav a{text-align:center}.wrap{margin-top:20px}.toolbar{align-items:stretch;flex-direction:column;gap:14px;position:static}.sort-control{align-items:stretch;flex-direction:column;gap:6px}.sort-control select{width:100%}.card{display:flex}.card img{height:245px;min-height:0}.grid{grid-template-columns:1fr}.content{padding:18px}.content h2{font-size:26px}.ratings{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:6px!important}.rating{padding:8px 6px!important}.stars{font-size:15px!important;letter-spacing:0!important}.rating small{font-size:11px}}
+@media(max-width:680px){.hero{padding:38px 20px 42px}.hero h1{font-size:34px}.quick-nav{display:grid;grid-template-columns:1fr 1fr}.quick-nav a{text-align:center}.wrap{margin-top:20px}.toolbar{align-items:stretch;flex-direction:column;gap:14px;position:static}.controls{display:grid;grid-template-columns:1fr}.sort-control{align-items:stretch;flex-direction:column;gap:6px}.sort-control select{width:100%}.card{display:flex}.card img{height:245px;min-height:0}.grid{grid-template-columns:1fr}.content{padding:18px}.content h2{font-size:26px}.ratings{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:6px!important}.rating{padding:8px 6px!important}.stars{font-size:15px!important;letter-spacing:0!important}.rating small{font-size:11px}}
 @media print{body{background:white}.card{break-inside:avoid;box-shadow:none;border:1px solid #ccd}}
 
 .ratings{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0 0 18px}
@@ -41,21 +40,24 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
   <a href="#challenge" data-view="challenge">Hardest Challenge</a>
 </nav></div></header>
 <main class="wrap">
-
-<div class="note"><b>Rating scale:</b> ★★★★★ = exceptional. <b>Eating</b> rates table quality, <b>Fun / Fight</b> rates the experience on the rod, and <b>Difficulty</b> rates how challenging the species is to locate, hook and successfully land. Difficulty can vary a lot with season, guide quality and conditions.</div>
-
-<div class="note"><b>Regulation warning:</b> The Florida Keys cross state/federal and Atlantic/Gulf management boundaries, and seasons/quotas can change. These are planning summaries, not a substitute for the current FWC and NOAA rules on the day you fish.</div>
-
 <section class="toolbar" aria-label="Fish list controls">
   <div><p class="eyebrow">Explore the list</p><h2 id="view-title">All fish</h2><p class="result-count" id="result-count" aria-live="polite">Showing all 15 species</p></div>
-  <div class="sort-control"><label for="sort-fish">Sort by</label><select id="sort-fish">
-    <option value="featured">Featured order</option>
-    <option value="eating">Eating rating</option>
-    <option value="fight">Fun / fight rating</option>
-    <option value="difficulty">Difficulty rating</option>
-    <option value="overall">Overall score</option>
-    <option value="name">Name A–Z</option>
-  </select></div>
+  <div class="controls">
+    <div class="sort-control"><label for="season-select">Regulation season</label><select id="season-select">
+      <option value="winter">Winter · Dec–Feb</option>
+      <option value="spring">Spring · Mar–May</option>
+      <option value="summer">Summer · Jun–Aug</option>
+      <option value="fall">Fall · Sep–Nov</option>
+    </select></div>
+    <div class="sort-control"><label for="sort-fish">Sort by</label><select id="sort-fish">
+      <option value="featured">Featured order</option>
+      <option value="eating">Eating rating</option>
+      <option value="fight">Fun / fight rating</option>
+      <option value="difficulty">Difficulty rating</option>
+      <option value="overall">Overall score</option>
+      <option value="name">Name A–Z</option>
+    </select></div>
+  </div>
 </section>
 
 <div class="fish-list" id="fish-list">
@@ -107,7 +109,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
           <section><h3>🎣 Bait & lures</h3><p>Live crabs are the classic choice; shrimp and small jigs.</p></section>
           <section><h3>📍 Where to catch</h3><p>Flats, channels, wrecks and reef edges around Marathon.</p></section>
         </div>
-        <section class="regs"><h3>⚖️ Regulations</h3><p>Marathon is in the Special Permit Zone: 22 in. minimum fork length; 1/person; max 2/vessel; closed Apr 1–Jul 31. Check current FWC SPZ rules.</p></section>
+        <section class="regs"><h3>⚖️ Regulations</h3><p>Marathon is in the Special Permit Zone: 22 in. minimum fork length; 1/person; maximum 2/vessel. Hook and line only in state waters.</p></section>
       </div>
     </article>
     <article class="card" data-name="Mahi-mahi" data-order="4" data-eating="5" data-fight="5" data-difficulty="3">
@@ -141,7 +143,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
           <section><h3>🎣 Bait & lures</h3><p>Large live pinfish, blue runners and cigar minnows; vertical jigs.</p></section>
           <section><h3>📍 Where to catch</h3><p>Deep reefs, wrecks and high-relief structure.</p></section>
         </div>
-        <section class="regs"><h3>⚖️ Regulations</h3><p>Atlantic and Gulf rules differ. Atlantic minimum is generally 28 in. fork length, 1/person, with seasonal closure; Gulf rules have a larger minimum and quota-based season. Verify the side of the Keys you fish.</p></section>
+        <section class="regs"><h3>⚖️ Regulations</h3><p>Marathon and all Monroe County state waters follow Atlantic rules: 28 in. minimum fork length; 1/person. Gulf federal waters use a 34 in. minimum and separate 2026 dates.</p></section>
       </div>
     </article>
     <article class="card" data-name="Blackfin Tuna" data-order="6" data-eating="5" data-fight="5" data-difficulty="4">
@@ -209,7 +211,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
           <section><h3>🎣 Bait & lures</h3><p>Live pinfish, grunts and pilchards; large jigs and diving plugs.</p></section>
           <section><h3>📍 Where to catch</h3><p>Reefs, ledges, wrecks and rocky bottom, tight to structure.</p></section>
         </div>
-        <section class="regs"><h3>⚖️ Regulations</h3><p>Monroe County follows special/Atlantic shallow-water grouper rules. 24 in. minimum total length; aggregate and vessel limits apply; seasonal closure applies. Verify current FWC/NOAA season before keeping one.</p></section>
+        <section class="regs"><h3>⚖️ Regulations</h3><p>Monroe County follows Atlantic grouper rules: 24 in. minimum total length; 1 gag or black grouper within the 3-grouper aggregate; federal vessel limit is 2 black grouper.</p></section>
       </div>
     </article>
     <article class="card" data-name="Mutton Snapper" data-order="10" data-eating="5" data-fight="4" data-difficulty="4">
@@ -260,7 +262,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
           <section><h3>🎣 Bait & lures</h3><p>Live shrimp, crabs and small crustaceans; small shrimp-tipped jigs.</p></section>
           <section><h3>📍 Where to catch</h3><p>Patch reefs, hard bottom and reef edges over sand/coral.</p></section>
         </div>
-        <section class="regs"><h3>⚖️ Regulations</h3><p>Florida Keys: 16 in. minimum fork length; 1/person; open May 1–Oct 31. Reef-fish gear rules apply.</p></section>
+        <section class="regs"><h3>⚖️ Regulations</h3><p>Florida Keys: 16 in. minimum fork length; 1/person. Reef-fish gear rules apply.</p></section>
       </div>
     </article>
     <article class="card" data-name="Mangrove Snapper" data-order="13" data-eating="5" data-fight="3" data-difficulty="3">
@@ -294,7 +296,7 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
           <section><h3>🎣 Bait & lures</h3><p>High-speed trolling lures, rigged ballyhoo and bonito strips.</p></section>
           <section><h3>📍 Where to catch</h3><p>Blue water, current edges, drop-offs and offshore structure.</p></section>
         </div>
-        <section class="regs"><h3>⚖️ Regulations</h3><p>Florida: no minimum size; 2/person; open year-round. Check applicable federal rules offshore.</p></section>
+        <section class="regs"><h3>⚖️ Regulations</h3><p>Florida: no minimum size; 2/person. Check applicable federal rules offshore.</p></section>
       </div>
     </article>
     <article class="card" data-name="Tripletail" data-order="15" data-eating="5" data-fight="4" data-difficulty="3">
@@ -311,16 +313,17 @@ footer{padding:25px 6vw 50px;color:#526a72;font-size:13px} footer a{color:#16738
           <section><h3>🎣 Bait & lures</h3><p>Live shrimp is excellent; small crabs, pilchards and jigs.</p></section>
           <section><h3>📍 Where to catch</h3><p>Buoys, trap lines, pilings and floating structure.</p></section>
         </div>
-        <section class="regs"><h3>⚖️ Regulations</h3><p>18 in. minimum total length; 2/person; hook-and-line only; open year-round under Florida rules.</p></section>
+        <section class="regs"><h3>⚖️ Regulations</h3><p>18 in. minimum total length; 2/person; hook-and-line only under Florida rules.</p></section>
       </div>
     </article>
 </div>
 </main>
-<footer>Prepared August 30, 2026 • Photographs are hosted with this guide and remain the property of their respective creators/licensors. <a href="image-sources.html">Image sources and credits</a>.</footer>
+<footer>Regulations checked August 30, 2026 against <a href="https://myfwc.com/fishing/saltwater/recreational/">FWC recreational saltwater rules</a> and <a href="https://www.fisheries.noaa.gov/rules-and-regulations">NOAA Fisheries rules</a> • <a href="image-sources.html">Image sources and credits</a>.</footer>
 <script>
 const list = document.querySelector('#fish-list');
 const cards = Array.from(list.querySelectorAll('.card'));
 const sortSelect = document.querySelector('#sort-fish');
+const seasonSelect = document.querySelector('#season-select');
 const viewTitle = document.querySelector('#view-title');
 const resultCount = document.querySelector('#result-count');
 const viewLinks = Array.from(document.querySelectorAll('[data-view]'));
@@ -337,6 +340,46 @@ const views = {
   eating: {title: 'Best eating', sort: 'eating', test: card => +card.dataset.eating === 5},
   catching: {title: 'Best to catch', sort: 'fight', test: card => +card.dataset.fight === 5},
   challenge: {title: 'Hardest challenge', sort: 'difficulty', test: card => +card.dataset.difficulty >= 4}
+};
+
+const seasonInfo = {
+  winter: {label: 'Winter', months: 'December–February'},
+  spring: {label: 'Spring', months: 'March–May'},
+  summer: {label: 'Summer', months: 'June–August'},
+  fall: {label: 'Fall', months: 'September–November'}
+};
+const yearRound = {state: 'open', label: 'Open', text: 'Open throughout this season.'};
+const seasonRules = {
+  'Tarpon': {
+    winter: {state: 'release', label: 'Release only', text: 'Catch-and-release throughout the season.'},
+    spring: {state: 'release', label: 'Release only', text: 'Catch-and-release throughout the season.'},
+    summer: {state: 'release', label: 'Release only', text: 'Catch-and-release throughout the season.'},
+    fall: {state: 'release', label: 'Release only', text: 'Catch-and-release throughout the season.'}
+  },
+  'Permit': {
+    winter: {state: 'open', label: 'Open', text: 'Open December–February in the Special Permit Zone.'},
+    spring: {state: 'mixed', label: 'Mixed dates', text: 'Open in March; closed April 1–May 31.'},
+    summer: {state: 'mixed', label: 'Mixed dates', text: 'Closed June 1–July 31; open August 1–31.'},
+    fall: {state: 'open', label: 'Open', text: 'Open September–November in the Special Permit Zone.'}
+  },
+  'Greater Amberjack': {
+    winter: {state: 'open', label: 'Open', text: 'Marathon/Monroe (Atlantic rules) is open. Gulf 2026 season is closed.'},
+    spring: {state: 'mixed', label: 'Mixed dates', text: 'Marathon/Monroe is open in March and May, but closed in April. Gulf 2026 season is closed.'},
+    summer: {state: 'open', label: 'Open', text: 'Marathon/Monroe is open June–August. Gulf 2026 season is closed.'},
+    fall: {state: 'open', label: 'Open', text: 'Marathon/Monroe is open. Gulf 2026 season runs September 1–October 13 only.'}
+  },
+  'Black Grouper': {
+    winter: {state: 'mixed', label: 'Mixed dates', text: 'Open in December; closed January 1–February 28.'},
+    spring: {state: 'mixed', label: 'Mixed dates', text: 'Closed March 1–April 30; open May 1–31.'},
+    summer: {state: 'open', label: 'Open', text: 'Open June–August under Atlantic/Monroe rules.'},
+    fall: {state: 'open', label: 'Open', text: 'Open September–November under Atlantic/Monroe rules.'}
+  },
+  'Hogfish': {
+    winter: {state: 'closed', label: 'Closed', text: 'Closed December–February in the Florida Keys.'},
+    spring: {state: 'mixed', label: 'Mixed dates', text: 'Closed March 1–April 30; open May 1–31.'},
+    summer: {state: 'open', label: 'Open', text: 'Open June–August in the Florida Keys.'},
+    fall: {state: 'mixed', label: 'Mixed dates', text: 'Open September 1–October 31; closed November 1–30.'}
+  }
 };
 
 let activeView = 'all';
@@ -358,9 +401,29 @@ function render() {
   const visible = sorted.filter(view.test);
   sorted.forEach(card => card.hidden = !view.test(card));
   visible.forEach((card, index) => card.querySelector('.rank').textContent = index + 1);
+  updateSeasonRules();
   viewTitle.textContent = view.title;
-  resultCount.textContent = `Showing ${visible.length} of ${cards.length} species`;
+  resultCount.textContent = `Showing ${visible.length} of ${cards.length} species · ${seasonInfo[seasonSelect.value].label} regulations`;
   viewLinks.forEach(link => link.setAttribute('aria-current', link.dataset.view === activeView ? 'page' : 'false'));
+}
+
+function updateSeasonRules() {
+  const season = seasonSelect.value;
+  cards.forEach(card => {
+    const regulations = card.querySelector('.regs');
+    let line = regulations.querySelector('.season-line');
+    if (!line) {
+      line = document.createElement('div');
+      line.className = 'season-line';
+      line.innerHTML = '<span class="season-state"></span><span class="season-detail"></span>';
+      regulations.querySelector('h3').after(line);
+    }
+    const rule = seasonRules[card.dataset.name]?.[season] || yearRound;
+    const state = line.querySelector('.season-state');
+    state.className = `season-state ${rule.state}`;
+    state.textContent = rule.label;
+    line.querySelector('.season-detail').textContent = rule.text;
+  });
 }
 
 function selectViewFromHash() {
@@ -371,7 +434,13 @@ function selectViewFromHash() {
 }
 
 sortSelect.addEventListener('change', render);
+seasonSelect.addEventListener('change', render);
 window.addEventListener('hashchange', selectViewFromHash);
+const month = new Date().getMonth();
+const currentSeason = month === 11 || month <= 1 ? 'winter' : month <= 4 ? 'spring' : month <= 7 ? 'summer' : 'fall';
+seasonSelect.value = currentSeason;
+const currentOption = seasonSelect.querySelector(`option[value="${currentSeason}"]`);
+currentOption.textContent += ' · current';
 selectViewFromHash();
 </script>
 </body></html>
